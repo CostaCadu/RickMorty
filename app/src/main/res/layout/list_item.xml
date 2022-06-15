@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey">
+
+        <ImageView
+            android:id="@+id/iv_character"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:contentDescription="@string/character_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/iv_character"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/character_name" />
+
+        <ImageView
+            android:id="@+id/iv_indicator_is_alive"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/ic_green_ball"
+            app:layout_constraintStart_toEndOf="@id/iv_character"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name"
+            android:contentDescription="@string/indicator" />
+
+        <TextView
+            android:id="@+id/tv_is_alive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@id/iv_indicator_is_alive"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name"
+            tools:text="@string/character_alive" />
+
+
+        <TextView
+            android:id="@+id/tv_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="05dp"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@id/tv_is_alive"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name"
+            android:text="@string/hash" />
+
+
+        <TextView
+            android:id="@+id/tv_species"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@id/tv_is_alive"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name"
+            tools:text="@string/character_species" />
+
+        <TextView
+            android:id="@+id/label_origin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@id/iv_character"
+            app:layout_constraintTop_toBottomOf="@+id/tv_is_alive"
+            android:text="@string/origin" />
+
+        <TextView
+            android:id="@+id/tv_origin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@id/iv_character"
+            app:layout_constraintTop_toBottomOf="@+id/label_origin"
+            tools:text="@string/character_localization" />
+
+        <TextView
+            android:id="@+id/label_created"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@id/iv_character"
+            app:layout_constraintTop_toBottomOf="@+id/tv_origin"
+            android:text="@string/created" />
+
+        <TextView
+            android:id="@+id/tv_created"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@id/iv_character"
+            app:layout_constraintTop_toBottomOf="@+id/label_created"
+            tools:text="@string/character_seen_where" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Rick</string>
+    <string name="character_name">Real Fake Doors Salesman</string>
+    <string name="character_image">Character Image</string>
+    <string name="character_alive">Alive</string>
+    <string name="character_localization">Interdimensional Cable</string>
+    <string name="character_seen_where">Seen Where</string>
+    <string name="character_species">Species</string>
+    <string name="created">Created:</string>
+    <string name="origin">Origin:</string>
+    <string name="hash">-</string>
+    <string name="indicator">Indicator</string>
+
+</resources>
